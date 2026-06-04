@@ -4,19 +4,26 @@ How do you know if your RAG system is performing well after deployment?
 This module covers online monitoring: collecting metrics from real users
 and visualizing them on a dashboard.
 
-We build a Streamlit chat app with feedback buttons, store conversations
+We build a Streamlit chat app, capture metrics, store conversations
 in PostgreSQL, and create Grafana dashboards for real-time monitoring.
 
 
 ## Lessons
 
 1. [Intro](lessons/01-intro.md) - Why monitoring matters, what we'll build
-2. [Chat App with Feedback](lessons/02-chat-app.md) - Streamlit app with RAG and thumbs up/down
-3. [Database](lessons/03-database.md) - PostgreSQL schema for conversations and feedback
-4. [Docker Compose](lessons/04-docker-compose.md) - Running PostgreSQL, Streamlit, and Grafana together
-5. [Grafana Dashboards](lessons/05-grafana.md) - SQL queries and dashboard panels
-6. [Synthetic Data](lessons/06-synthetic-data.md) - Generating test data for dashboards
-7. [Next Steps](lessons/07-next-steps.md) - OpenTelemetry, alerting, further reading
+2. [Assistant Setup](lessons/02-assistant-setup.md) - Setting up the RAG assistant
+3. [Chat App](lessons/03-chat-app.md) - Basic Streamlit app with RAG
+4. [Capturing Metrics](lessons/04-metrics.md) - LLMCallRecord, cost tracking
+5. [Database](lessons/05-database.md) - PostgreSQL with Docker, saving conversations
+6. [Querying Data](lessons/06-querying.md) - Fetching stored conversations
+7. [Streamlit Dashboard](lessons/07-streamlit-dashboard.md) - Visualizing metrics in Streamlit
+8. [User Feedback](lessons/08-user-feedback.md) - Thumbs up/down buttons
+9. [Built-in Judge](lessons/09-built-in-judge.md) - LLM-as-a-judge for automatic relevance evaluation
+10. [Feedback Dashboard](lessons/10-feedback-dashboard.md) - Adding feedback panels to the Streamlit dashboard
+11. [Synthetic Data](lessons/11-synthetic-data.md) - Generating test data for dashboards
+12. [Grafana Dashboards](lessons/12-grafana.md) - SQL queries and dashboard panels
+13. [Docker Compose](lessons/13-docker-compose.md) - Running everything together
+14. [Next Steps](lessons/14-next-steps.md) - OpenTelemetry, alerting, further reading
 
 
 ## Older content
