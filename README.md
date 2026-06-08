@@ -22,7 +22,7 @@
 | Resource | Link |
 |-|-|
 | 📁 Course materials | [GitHub repository](https://github.com/DataTalksClub/llm-zoomcamp) |
-| 🎥 Video lectures | [YouTube playlist](https://www.youtube.com/playlist?list=PL3MmuxUbc_hIB4fSqLy_0AfTjVLpgjV3R) |
+| 🎥 Video lectures | [YouTube playlist](https://www.youtube.com/playlist?list=PL3MmuxUbc_hLZFNgSad56pDBKK8KO0XIv) |
 | 📅 Cohort schedule & deadlines | [courses.datatalks.club](https://courses.datatalks.club/llm-zoomcamp-2026) |
 | 💬 Slack community | [#course-llm-zoomcamp](https://app.slack.com/client/T01ATQK62F8/C06TEGTGM3J) |
 | 📣 Announcements | [Telegram](https://t.me/llm_zoomcamp) |
@@ -200,7 +200,7 @@ A huge thanks to our sponsors for making this course possible!
 Join the [`#course-llm-zoomcamp`](https://app.slack.com/client/T01ATQK62F8/C06TEGTGM3J) channel on [DataTalks.Club Slack](https://datatalks.club/slack.html) for discussions, troubleshooting, and networking with fellow learners and the course team.
 
 To keep discussions useful for everyone:
-- Follow [our posting guidelines](asking-questions.md) when asking questions
+- Follow [our posting guidelines](https://datatalks.club/docs/courses/zoomcamp-logistics/asking-questions/) when asking questions
 - Review the [community guidelines](https://datatalks.club/slack/guidelines.html)
 
 ### Learning in Public
