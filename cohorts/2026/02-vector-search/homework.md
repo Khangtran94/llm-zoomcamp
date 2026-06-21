@@ -231,14 +231,11 @@ def rrf(result_lists, k=60, num_results=5):
     return [docs[key] for key in ranked[:num_results]]
 ```
 
-
-Let's use this function.
-
-Run text search and vector search (top 5 each) for this query, then
-combine them with `rrf`:
+Now run the query `"How do I give the model access to tools?"`
+with vector and text search and fuse the results with `rrf`:
 
 ```python
-query = "How do I give the model access to tools?"
+results = rrf([vector_results, text_results])
 ```
 
 Which file is ranked first after RRF?
