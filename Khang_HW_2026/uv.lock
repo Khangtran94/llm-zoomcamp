@@ -1277,7 +1277,7 @@ requires-dist = [
     { name = "onnxruntime", specifier = ">=1.27.0" },
     { name = "psycopg", extras = ["binary"], specifier = ">=3.3.4" },
     { name = "python-dotenv", specifier = ">=1.2.2" },
-    { name = "requests", specifier = ">=2.34.2" },
+    { name = "requests", specifier = ">=2.28.1" },
     { name = "sentence-transformers", specifier = ">=5.6.0" },
     { name = "sqlitesearch", specifier = ">=0.1.1" },
     { name = "tokenizers", specifier = ">=0.22.2" },
