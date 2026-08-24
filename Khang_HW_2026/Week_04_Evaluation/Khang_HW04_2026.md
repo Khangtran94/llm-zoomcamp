@@ -18,8 +18,16 @@ same 72 pages.
 
 ## Setup
 
-This homework continues from homework 2. We reuse the same chunks and the same
-search functions, so it's easiest to keep working in the same project.
+This homework continues directly from homework 2. Keep working in the same
+project directory: we reuse its chunks, search functions, `embedder.py`, and
+downloaded ONNX model. Before starting, make sure the project still contains:
+
+- `embedder.py`
+- `download.py`
+- `models/Xenova/all-MiniLM-L6-v2/model.onnx`
+
+If any of these are missing, repeat the
+[homework 2 setup](../02-vector-search/homework.md#setup) before continuing.
 
 We need a few more libraries for generating questions with an LLM:
 
@@ -132,7 +140,7 @@ PREFIX=https://raw.githubusercontent.com/DataTalksClub/llm-zoomcamp/main
 wget ${PREFIX}/cohorts/2026/04-evaluation/ground-truth.csv
 ```
 
-Load it with pandas into a list of records called `ground_truth`. Each record
+Load it with pandas into a dataframe of records called `ground_truth`. Each record
 has a `question` and the `filename` of the page that should answer it.
 
 ## Searching the chunks
@@ -216,6 +224,11 @@ lecture. We change only the label. Our ground truth uses `filename`, so a result
 counts as a hit when a returned chunk's `filename` matches the question's
 `filename`, not a document `id`.
 
+The lesson evaluates whole FAQ records, while this homework evaluates chunks.
+Adjust the relevance logic to use the fields available on the chunk results and
+homework ground truth instead of copying the lesson's record-based comparison
+unchanged.
+
 As a reminder, these functions do the following:
 
 - `compute_relevance` runs search for a question and returns a list of 0s and 1s
@@ -253,7 +266,8 @@ sharpens the gap between positions, so being at the top of a list counts for
 more. The RRF paper uses 60 as a default, but the best value depends on the data
 - so let's measure it.
 
-Evaluate `hybrid_search` for `k` values 1, 50, 100, and 200.
+Evaluate `hybrid_search` over the full ground truth dataset for `k` values 1,
+50, 100, and 200. Compare the MRR values for these runs.
 
 Which `k` gives the best MRR?
 
