@@ -1,4 +1,4 @@
-## Homework: AI Orchestration with Kestra
+# Homework 3: Orchestration
 
 ATTENTION: At the end of the submission form, you will be required to include a link to your GitHub repository or other public code-hosting site. This repository should contain your code for solving the homework. If your solution includes code that is not in file format, please include these directly in the README file of your repository.
 
@@ -8,9 +8,9 @@ ATTENTION: At the end of the submission form, you will be required to include a 
 
 Before starting this homework, ensure you have:
 
-1. Completed the [Module 3 lessons](../../../03-orchestration/README.md) — the questions reference flows and concepts covered there
-2. Kestra running locally with API keys configured (see the [Setup](../../../03-orchestration/lessons/03-setup.md) lesson) -- this includes the Gemini API key, which is also required for the AI Copilot
-3. Imported all flows from the `03-orchestration/flows/` directory (covered in the Setup lesson)
+1. Completed the [Module 3 lessons](README.md) — the questions reference flows and concepts covered there
+2. Kestra running locally with API keys configured (see the [Setup](03-setup.md) lesson) -- this includes the Gemini API key, which is also required for the AI Copilot
+3. Imported all flows from the `flows/` directory (covered in the Setup lesson)
 
 ## Question 1: Context Engineering
 
